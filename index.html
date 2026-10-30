@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSAI-NI, KAO | Automation Projects & Practical Development Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 24px;
+            bottom: -24px;
+            width: 2px;
+            background-color: #e2e8f0;
+        }
+        .timeline-item:last-child .timeline-line::before { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <header class="bg-slate-900 text-white pt-20 pb-16 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h1 class="text-4xl md:text-5xl font-black mb-4 tracking-tight">TSAI-NI, KAO</h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-400 mb-6">Automation Projects & Practical Development Portfolio</h2>
+            <p class="text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl mb-8">
+                A process optimization driver combining operational experience with programming skills. Proficient in Python scripting and UiPath automation, focused on eliminating inefficient manual administrative tasks. Independently developed multiple automation tools for processing telemarketing and exception cases, reducing operation time by over 80% and increasing accuracy to 95%. Skilled in cross-system integration and data cleaning, dedicated to creating tangible business value.
+            </p>
+            <div class="flex gap-4">
+                <a href="#projects" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg transition">View Projects</a>
+            </div>
+        </div>
+        <div class="absolute right-0 top-0 opacity-10 transform translate-x-1/3 -translate-y-1/4">
+            <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFFFFF" d="M42.7,-73.4C55.9,-65.8,67.6,-54.6,76.5,-41.5C85.4,-28.4,91.5,-14.2,90.4,-0.6C89.3,13,81.1,26.1,72.2,38.2C63.3,50.3,53.8,61.5,41.4,69.5C29,77.5,14.5,82.4,0.3,81.8C-13.9,81.3,-27.8,75.4,-39.8,67.1C-51.8,58.8,-61.8,48.2,-70.6,35.8C-79.4,23.4,-87.1,9.2,-86.6,-4.7C-86.2,-18.6,-77.6,-32.1,-67.2,-42.6C-56.8,-53.1,-44.6,-60.7,-31.8,-68.6C-19,-76.6,-5.5,-85,4.6,-93.3C14.7,-101.6,29.5,-81,42.7,-73.4Z" transform="translate(100 100)" />
+            </svg>
+        </div>
+    </header>
+
+    <main id="projects" class="max-w-4xl mx-auto px-6 py-16 space-y-16">
+
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">Python</span>
+                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">Playwright</span>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 mb-6">Project 1: Telemarketing Case Automated Processing System</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Pain Points</h4>
+                    <p class="text-slate-600 leading-relaxed">Handling daily mobile contract renewal cases required significant manpower. The workflow was highly repetitive and demanded intense focus to avoid human errors and potential customer complaints.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Project Results</h4>
+                    <p class="text-slate-600 leading-relaxed font-medium">Independently developed 3 types of automated processing tools covering 57% of total case volume. Saved up to 198 operational hours monthly for the New Taipei branch while maintaining a stable accuracy rate of 95%.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <h4 class="text-md font-bold text-slate-800 mb-6">System Workflow & Architecture</h4>
+                <div class="space-y-6 relative">
+                    <div class="relative pl-8 timeline-item">
+                        <div class="timeline-line"></div>
+                        <div class="absolute left-0 top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-white font-bold">1</div>
+                        <h5 class="font-bold text-slate-800 text-lg">Data Extraction & Classification (TMS System)</h5>
+                        <p class="text-slate-500 text-sm mt-1">Automatically logs into the TMS system to retrieve pending lists and customer details, utilizes regular expressions for logical classification, and outputs structured JSON data.</p>
+                    </div>
+                    <div class="relative pl-8 timeline-item">
+                        <div class="timeline-line"></div>
+                        <div class="absolute left-0 top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-white font-bold">2</div>
+                        <h5 class="font-bold text-slate-800 text-lg">Cross-System Automation (mBMS System)</h5>
+                        <p class="text-slate-500 text-sm mt-1">Triggers corresponding automation scripts based on case types: (A) NP operations, automatically selecting equivalent 5G plans; (B) Adding main plans automatically based on JSON data; (C) Removing value-added services.</p>
+                    </div>
+                    <div class="relative pl-8 timeline-item">
+                        <div class="timeline-line"></div>
+                        <div class="absolute left-0 top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-white font-bold">3</div>
+                        <h5 class="font-bold text-slate-800 text-lg">Result Validation & Reporting</h5>
+                        <p class="text-slate-500 text-sm mt-1">Extracts the order numbers generated upon successful processing, automatically pauses and tags cases blocked by system constraints, and outputs execution result lists and exception summary reports.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 flex items-start p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                <svg class="w-5 h-5 text-amber-500 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <p class="text-sm text-amber-800"><strong>Note:</strong> Due to customer privacy concerns regarding the system interface, demonstration videos are not displayed on the webpage. I would be happy to showcase them in person during an interview!</p>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full">UiPath Studio</span>
+                <span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full">UI Automation</span>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 mb-6">Project 2: Exception Case Automated Resubmission Workflow</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Pain Points</h4>
+                    <p class="text-slate-600 leading-relaxed">Hundreds to thousands of exception cases requiring workflow resubmissions irregularly occurred each month. Relying on manual, case-by-case system checks and resubmissions consumed 3 to 6 hours each time, severely draining team resources.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Project Results</h4>
+                    <p class="text-slate-600 leading-relaxed font-medium">Independently developed an automated resubmission tool using UiPath, consistently eliminating 3 to 18 hours of highly repetitive manual labor per month and significantly easing the team's workload.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-50 rounded-xl p-6 border border-slate-100">
+                <h4 class="text-md font-bold text-slate-800 mb-6">System Workflow & UiPath Architecture</h4>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6 relative">
+                        <div class="relative pl-8 timeline-item">
+                            <div class="timeline-line"></div>
+                            <div class="absolute left-0 top-1 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-white font-bold">1</div>
+                            <h5 class="font-bold text-slate-800 text-lg">Data List Reading</h5>
+                            <p class="text-slate-500 text-sm mt-1">Reads local TXT files to retrieve all pending phone numbers and stores them in an array loop.</p>
+                        </div>
+                        <div class="relative pl-8 timeline-item">
+                            <div class="timeline-line"></div>
+                            <div class="absolute left-0 top-1 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-white font-bold">2</div>
+                            <h5 class="font-bold text-slate-800 text-lg">System Status Detection</h5>
+                            <p class="text-slate-500 text-sm mt-1">Queries the system case-by-case to extract order status. If the status includes "Exception Case Processing", it triggers the resubmission action; otherwise, it automatically returns to the query homepage.</p>
+                        </div>
+                        <div class="relative pl-8 timeline-item">
+                            <div class="timeline-line"></div>
+                            <div class="absolute left-0 top-1 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white shadow-sm flex items-center justify-center text-[10px] text-white font-bold">3</div>
+                            <h5 class="font-bold text-slate-800 text-lg">UI Automated Resubmission</h5>
+                            <p class="text-slate-500 text-sm mt-1">Automatically clicks the "Correct" and submit buttons, integrating UI element detection logic to dynamically and stably handle various randomly appearing system confirmation pop-ups, ensuring uninterrupted workflows.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-2 rounded shadow-sm border border-slate-200">
+                        <img src="image_2594fa.jpg" alt="UiPath Status Detection and Decision Node Design" class="w-full h-auto rounded">
+                        <p class="text-center text-xs text-slate-400 mt-2">UiPath Design</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 flex items-start p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                <svg class="w-5 h-5 text-amber-500 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <p class="text-sm text-amber-800"><strong>Note:</strong> Due to customer privacy concerns regarding the system interface, demonstration videos are not displayed on the webpage. I would be happy to showcase them in person during an interview!</p>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-10">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full">Python</span>
+            </div>
+            <h3 class="text-2xl font-black text-slate-900 mb-6">Project 3: Telemarketing Case Remark Text Reduction Tool</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Pain Points</h4>
+                    <p class="text-slate-600 leading-relaxed">The system's remark length is strictly limited to 200 bytes; exceeding this limit will cause processing failures. Operational staff spent excessive time and mental effort manually trimming words daily.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2">Project Results</h4>
+                    <p class="text-slate-600 leading-relaxed font-medium">Developed a resident text cleaning tool. Perfectly resolved system error issues, saving an estimated 14.5 hours of manual text editing per month for the center, greatly optimizing the operational experience.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 rounded-xl overflow-hidden shadow-lg border border-slate-800">
+                <video controls class="w-full h-auto">
+                    <source src="814780406.077856.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </section>
+
+        <section class="bg-slate-100 rounded-2xl p-8 md:p-10 text-center">
+            <h3 class="text-xl font-black text-slate-900 mb-3">🎮 Project 4: Mini Project - Animal Dash Fight</h3>
+            <p class="text-slate-600 mb-6 max-w-2xl mx-auto">
+                An interactive web mini-game developed using GOOGLE AI STUDIO and rendered in HTML. Implemented collision detection, character switching, and a high-score tracking mechanism.
+            </p>
+            <a href="https://fju409411296.github.io/pug_n_bear_game/" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold py-2.5 px-6 rounded-lg transition">
+                Play Now
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-slate-200 py-10 text-center">
+        <p class="text-slate-500 font-medium">© 2026 TSAI-NI, KAO. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
